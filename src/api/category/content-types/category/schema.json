@@ -20,8 +20,6 @@
       "type": "string"
     },
     "products": {
-      "collection": "category",
-      "via": "product",
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",

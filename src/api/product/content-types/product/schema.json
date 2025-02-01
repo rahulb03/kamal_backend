@@ -26,22 +26,22 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "category": {
-        "collection": "product",
-      "via": "category",
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
+      "collection": "product",
+      "via": "category",
       "inversedBy": "products",
-      "mappedBy":"products"
+      "mappedBy": "products"
     }
   }
 }
